@@ -7,4 +7,4 @@ api_v4_auth = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzZmJkNzllNjJmNGRhOWFkZmU1OTkzNzIy
 example_api_call = 'https://api.themoviedb.org/3/movie/550?api_key=3fbd79e62f4da9adfe599372206e089b'
 
 # Postgres Database connection 
-DATABASE_URI = 'postgres+psycopg2://postgres:postgres@localhost:5432/...'
+DATABASE_URI = 'postgres+psycopg2://postgres:postgres@localhost:5432/moviesbudget_db'

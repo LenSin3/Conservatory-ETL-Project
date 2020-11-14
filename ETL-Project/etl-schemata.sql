@@ -1,7 +1,7 @@
 -- SCHEMAS FOR THE DATABASE
 -- Drop Tables if they exists
 DROP TABLE FinalMoviesBudget;
-DROP TABLE NetflixRevenueFinal;
+DROP TABLE netflix_movies_revenue;
 
 -- CREATE TABLES
 
