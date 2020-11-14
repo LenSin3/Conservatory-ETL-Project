@@ -12,29 +12,29 @@ CREATE TABLE FinalMoviesBudget (
 	title VARCHAR(256) NOT NULL,
 	vote_count INTEGER NOT NULL,
 	vote_average FLOAT NOT NULL,
-	revenue INTEGER NOT NULL,
+	revenue BIGINT NOT NULL,
 	runtime FLOAT NOT NULL,
 	popularity FLOAT NOT NULL,
 	ReleaseDate DATE NOT NULL,
-	ProductionBudget INTEGER NOT NULL,
-	DomesticGross INTEGER NOT NULL,
-	WorldwideGross INTEGER NOT NULL
+	ProductionBudget BIGINT NOT NULL,
+	DomesticGross BIGINT NOT NULL,
+	WorldwideGross BIGINT NOT NULL
 
 );
 
-CREATE TABLE NetflixRevenueFinal (
+CREATE TABLE netflix_movies_revenue (
 
 	id INTEGER NOT NULL,
 	title VARCHAR(256) NOT NULL,
 	country VARCHAR(256) NOT NULL,
-	release_year DATE NOT NULL,
+	release_year INTEGER NOT NULL,
 	rating VARCHAR(256) NOT NULL,
 	revenue INTEGER NOT NULL,
 	vote_count INTEGER NOT NULL,
 	vote_average FLOAT NOT NULL,
 	runtime FLOAT NOT NULL,
-	popularity FLOAT NOT NULL,
-	FOREIGN KEY (id) REFERENCES FinalMoviesBudget (id)
+	popularity FLOAT NOT NULL
+	
 	
 
 );
