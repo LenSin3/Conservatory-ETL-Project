@@ -40,17 +40,21 @@ The cleaned data is then loaded into PostgreSQL, a RDBMS efficient at storing ta
 
 ## Analysis
 
+The data was analyzed using pandas and matplotlib to visualize the movies with the highest budget allocation and revenue.
 
-Data Tools We Used:
-	Python Pandas
-	Splinter
-	Beautiful Soup
-	PostgreSQL
+## Tools and Libraries
 
-Our Method of Action 
-How do we find the relevant data and extract it?
-Load and check: if data doesn’t satisfy needs check for another source.
-Extract new data and merge with old data.
-Transform through merging and cleaning
-Load into postgreSQL
+* Python
+* Pandas
+* Matplotlib
+* SQLAlchemy
+* Splinter
+* Beautiful Soup
+* PostgreSQL
+
+## Environment
+
+* Python 3.6 in
+  * Jupyter Notebook
+  * VS Code
 
