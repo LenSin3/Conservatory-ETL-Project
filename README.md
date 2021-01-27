@@ -1,19 +1,45 @@
 # Conservatory-ETL-Project
+
 Netflix and Movies ETL
 
-Project Description/Outline
-The movie industry is monumental. Watching movies is still one of the most popular ways of spending leisure time, and Netflix has become one of the most popular movie streaming services chosen by the consumer. One would wonder what kind of budget these movies have. . .  Does it determine the success of a film? Does high budgets mean more revenue? 
-The purpose of the project is to extract movie data from the listed data sources below, transform them into a new dataframe and load in PostgreSQL and see whether it can answer our questions. 
+## Objective
 
-Our Data Sets and Data Sources
-	Netflix_final.csv: https://www.kaggle.com/shivamb/netflix-show 
-	Movies_revenue.csv: API call from https //www.themoviedb.org
-	movies_num_final.csv:  https://www.the-numbers.com/movie/budgets/all
+The movie industry is monumental. Watching movies is still one of the most popular ways of spending leisure time, and Netflix has become one of the most popular movie streaming services chosen by the consumer. 
 
+In the light of the above, this project seeks to answer the following:
 
-Extracted Data Type 
-	CSV
-	JSON 
+* Size of budget allocated to these movies?
+
+* Does size determine the success of a film?
+
+* Does big budget translates to higher revenue?
+
+## ETL Process
+
+To answer these questions, an ETL pipeline was developed as outlined below:
+
+### Extract
+
+Netflix data was retrieved from **Kaggle** repository downloaded in csv format, while actual budget and revenue figures were extracted via web scraping **The Numbers**, a website that hosts financial data on a broad range of films, movies and documentaries. Also, a series of API calls were made to **The Movie Database (TMDB)** to get other relevant information such as rating and film duration, among others.
+
+The links to the data sources are listed as following:
+
+* [Netflix Movies](https://www.kaggle.com/shivamb/netflix-show)
+
+* [The Numbers](https://www.the-numbers.com/movie/budgets/all)
+
+* [The Movie Database (TMDB)](https://www.themoviedb.org)
+
+### Transform
+
+The transform process involved a series of data cleaning and merging, ensuring final data is in the right format to load in a database and eventually carryout relevant analysis.
+
+### Load
+
+The cleaned data is then loaded into PostgreSQL, a RDBMS efficient at storing tabular data.
+
+## Analysis
+
 
 Data Tools We Used:
 	Python Pandas
