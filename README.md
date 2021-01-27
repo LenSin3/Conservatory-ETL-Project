@@ -40,7 +40,7 @@ The cleaned data is then loaded into PostgreSQL, a RDBMS efficient at storing ta
 
 ## Analysis
 
-
+![Movies Budget and Gross Revenue](ETL-Project/top_budget.png)
 
 The data was analyzed using pandas and matplotlib to visualize the movies with the highest budget allocation and revenue as seen in the graph above
 
